@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Dragon Trainer 2020</title>
+  <link rel="stylesheet" href="assets/styles/app.css">
+  <script src="assets/scripts/keyword.js" defer></script>
+  <script src="assets/scripts/app.js" defer></script>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1></h1>
+    </header>
+    <section id="initZone">
+      <div>
+        <label for="maxWord">Word number</label>
+        <input name="maxWord" id="maxWord" type="number" value="20">
+      </div>
+      <div>
+        <label for="time">Time</label>
+        <input name="time" id="time" type="number" value="300">
+      </div>
+      <button id="startBtn">
+        START
+      </button>
+    </section>
+    <section id="gameZone">
+      <h1 id="word"></h1>
+      <div class="btnGroup">
+        <button id="answerFalse">False</button>
+        <button id="answerCorrect">Correct</button>
+      </div>
+    </section>
+    <footer>
+      <h1>00 : 00</h1>
+    </footer>
+  </div>
+</body>
+
+</html>
