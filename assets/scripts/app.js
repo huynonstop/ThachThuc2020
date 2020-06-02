@@ -50,8 +50,10 @@ class App {
 		const word = document.querySelector("#word").innerHTML;
 		this[mode].unshift(word);
 		this.wordCount.unshift(word);
-		console.log(word);
 		this.updateScore();
+		document.querySelector("header .progress-bar").style.width = `${
+			(this.wordTrue.length / this.wordCount.length) * 100
+		}%`;
 		if (!this.checkGame()) return this.gameOver();
 		else return this.next();
 	}
