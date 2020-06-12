@@ -69,9 +69,9 @@ class App {
 startBtn.addEventListener("click", () => {
 	App.start();
 });
-startBtn.addEventListener("touchstart", () => {
-	App.start();
-});
+// startBtn.addEventListener("touchstart", () => {
+// 	App.start();
+// });
 trueBtn.addEventListener("click", () => {
 	App.answer("wordTrue");
 });
