@@ -12,13 +12,6 @@ function* shuffle(array) {
 	}
 }
 class App {
-	static GAMESTART = true;
-	static wordCount = [];
-	static wordTrue = [];
-	static wordFalse = [];
-	static wordList = shuffle([...keyword]);
-	static timer = 0;
-	static timerInterval;
 	static start() {
 		initElement.style.display = "none";
 		gameElement.style.display = "block";
